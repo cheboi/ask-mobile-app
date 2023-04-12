@@ -1,12 +1,11 @@
 import { StyleSheet } from "react-native";
 
-import EditScreenInfo from "../../components/EditScreenInfo";
-import { Text, View } from "../../components/Themed";
+import { Text, View, TextInput } from "../../components/Themed";
 
-export default function TabOneScreen() {
+export default function questions() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home page</Text>
+      <TextInput style={styles.Input}>Home page</TextInput>
     </View>
   );
 }
@@ -17,7 +16,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  title: {
+  Input: {
     fontSize: 20,
     fontWeight: "bold",
   },
